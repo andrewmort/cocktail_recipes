@@ -1,0 +1,68 @@
+Description: Website of cocktail recipes, which can be sorted, filtered, and searched.
+
+Cocktail Database Entry
+ - Name
+ - List of Ingredients
+    * Any number of ingredients
+      - Quantity
+      - Ingredient
+ - Instructions
+ - Time Stamp
+ - Link to previous revisions of entries (if exists)
+
+Ingredients Database Entry
+  - Ingredient/Subcategory
+  - Parent Category (none if top category)
+
+Entering Ingredients
+  - Provide suggestions based on existing ingredients while typing
+  - When an existing ingredient is chosen, show category
+  - If an ingredient doesn't exist, allow user to add new ingredient to database
+    * Must also specify category (provide suggestion while typing)
+    * Allow user to create new category if it doesn't already exist
+    * Add parent category to new category
+
+Add/Edit Recipes
+ - On add, create an empty form with name, one ingredient, and instructions fields
+ - On edit, pre-populate form with recipe
+ - Allow ingredient fields to be added or removed by pressing +/- next to field
+ - Save recipe when button is pressed and add new entry in database
+ - On edit, add link to previous version in database
+
+Viewing Recipes
+  - Main site page, should look like the following:
+
+   -------------------------------------------------
+   |  Search  |  Filter  |  Sort  |   View  | New
+   |
+   | Cocktail 1
+   |   Date: xx/xx/xxxx
+   |   Description (show | hide)
+   |   Ingredients (show | hide)
+   |      * Quantity - Ingredient 1 / Sub Category / Parent Category
+   |      * Quantity - Ingredient 2 / Parent Category
+   |      * Quantity - Ingredient 3 / Sub Sub Category / Sub Category / Parent Category
+   |   Instructions (show | hide)
+   |      1. ...
+   |      2. ...
+   |   Tags: tag0, tag1
+   |   Edit | History
+   |
+   | Cocktail 2
+   |   Date: xx/xx/xxxx
+   |   Ingredients
+        ...
+
+  - Control bar is always visible while scrolling
+    * Search allows dynamic search while typing (results are filtered while typing)
+        - Search will use name, description, ingredients, categories, and instructions
+    * Filter
+        - Allows filtering by ingredient, ingredient category, date
+    * Sort
+        - Select fields to sort by (name, type of ingredient)
+    * View
+        - Allows default setting for all recipes to show or hide cocktail details, such
+          as description, ingredients, and instructions
+    * New
+        - Create new recipe entry
+
