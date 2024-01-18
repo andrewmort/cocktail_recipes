@@ -1,0 +1,9 @@
+* Based on details in: https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
+
+* Create express add with default settings:
+  - npm install express-generator -g // Install express generator globally
+  - express <site_name> // Create standard express site template
+
+* Start server with "npm run serverstart"
+  - Need to setup scripts in package.json file
+  - This will reload site anytime a file is updated
